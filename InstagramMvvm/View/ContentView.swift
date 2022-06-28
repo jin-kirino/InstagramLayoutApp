@@ -9,6 +9,9 @@ import SwiftUI
 
 // ◉Observer(データ受け取り、反映)
 struct ContentView: View {
+    // ViewModelからの情報を受け取る(@StateObject)
+    // ObservableObjectプロトコルに準拠したUserDataクラスをViewで共有するため
+    @StateObject var userDataList = UserData()
     // いいねの数
     let numberOfLikes: Int = 0
     // 投稿者の名前
@@ -17,9 +20,7 @@ struct ContentView: View {
     let userImageName: String = ""
     // 投稿した画像名
     let postImageName: String = ""
-    // ViewModelからの情報を受け取る
-    @ObservableObject var userDataList = UserData()
-    
+
     var body: some View {
         VStack {
             HStack {

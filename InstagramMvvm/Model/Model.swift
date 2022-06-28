@@ -18,12 +18,6 @@ struct UserData2: Identifiable {
     let postImageName: String
 }
 
-var userData[String] = [[userName: "jenny",
-               userImageName: "jenny_image",
-               postImageName: "post_1"],
-              [userName: "zuck",
-               userImageName: "zuck_image",
-               postImageName: "post_2"],
-              [userName: "john",
-               userImageName: "john_image",
-               postImageName: "post_3"]]
+let jenny = UserData2(userImageName: "jenny_image", userName: "jenny", postImageName: "post_1")
+let zuck = UserData2(userImageName: "zuck_image", userName: "zuck", postImageName: "post_2")
+let john = UserData2(userImageName: "john_image", userName: "john", postImageName: "post_3")

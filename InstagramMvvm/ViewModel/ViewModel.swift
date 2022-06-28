@@ -8,43 +8,36 @@
 import Foundation
 
 import UIKit
+import SwiftUI
 
 // ObservableObject
 // @Published
 // ◉Publisher(データ発信)◉
 
 // 3件分のデータを管理する
-// 計算はViewModel
-//struct TimelineItem: Identifiable {
-//    let id = UUID()
-//    let userImageName: String
-//    let userName: String
-//    let postImageName: String
-//}
 
+// カスタムクラス内でデータの状態を管理する(ObservableObject)
 class UserData: ObservableObject {
-    struct ResultJson: Codable {
-        struct TimelineData: Codable {
-
+    // 構造体、オプショナル型、？をつけてnilを許す
+    struct TimelineData {
             // ユーザーのアイコン
             let userImageName: String?
             // ユーザー名
             let userName: String?
             // 投稿した画像名
             let postImageName: String?
-        }
-        let data: [TimelineData]?
-    }
+        }// TimelineData
+    // 要素をまとめる配列
+    var timelineData: [TimelineData]?
+}// UserData
+   
+    
+    func timelineRowView(userList: String) {
     
     
-    @Published var timelineData: [TimelineData] = []
-    @ObservableObject var userDataList = UserData()
-    
-    func timelineRowView(userList: [String]) {
-        
-    }
-}
+}// UserData
+// Modelのデータと同じ型にして配列で受け取れるように@Publishdで定義
+//@Published var timelineData: [UserData2] = []
 
-let timeline = UserData(userImageName: userImageName, userName: userName, postImageName: postImageName)
 
 
