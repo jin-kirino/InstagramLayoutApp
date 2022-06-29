@@ -10,14 +10,15 @@ import Foundation
 // 配列
 // Modelはデータを扱う責務、範囲
 // ３つの投稿をModelで管理
-struct UserData2: Identifiable {
-    let id = UUID()
-    let numberOfLikes:Int
-    let userImageName: String
+
+struct UserModel {
     let userName: String
+    let userImageName: String
     let postImageName: String
 }
 
-let jenny = UserData2(numberOfLikes: 200, userImageName: "jenny_image", userName: "jenny", postImageName: "post_1")
-let zuck = UserData2(numberOfLikes: 200, userImageName: "zuck_image", userName: "zuck", postImageName: "post_2")
-let john = UserData2(numberOfLikes: 200, userImageName: "john_image", userName: "john", postImageName: "post_3")
+var Users = [
+UserModel(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1"),
+UserModel(userName: "zuck", userImageName: "zuck_image", postImageName: "post_2"),
+UserModel(userName: "john", userImageName: "john_image", postImageName: "post_3")
+]
