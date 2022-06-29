@@ -27,17 +27,12 @@ class UserData: ObservableObject {
             // 投稿した画像名
             let postImageName: String?
         }// TimelineData
-    // 要素をまとめる配列
+    // 複数の要素をまとめる配列
     var timelineData: [TimelineData]?
+    // ObservableObjectプロトコル内のプロパティをContentViewのbodyに配信する
+    @Published var userList: [UserModel] = []
 }// UserData
-   
-    
-    func timelineRowView(userList: String) {
-    
-    
-}// UserData
+      
 // Modelのデータと同じ型にして配列で受け取れるように@Publishdで定義
-//@Published var timelineData: [UserData2] = []
 
-
-
+// リストを作成してViewに返す
