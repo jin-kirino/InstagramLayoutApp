@@ -17,7 +17,7 @@ import SwiftUI
 // 3件分のデータを管理する
 
 // カスタムクラス内でデータの状態を管理する(ObservableObject)
-class UserData: ObservableObject {
+class ViewModel: ObservableObject {
     // 構造体、オプショナル型、？をつけてnilを許す
     struct TimelineData {
             // ユーザーのアイコン
@@ -27,10 +27,10 @@ class UserData: ObservableObject {
             // 投稿した画像名
             let postImageName: String?
         }// TimelineData
-    // 複数の要素をまとめる配列
+    // ３つの要素をまとめる配列
     var timelineData: [TimelineData]?
     // ObservableObjectプロトコル内のプロパティをContentViewのbodyに配信する
-    @Published var userList: [UserModel] = []
+    @Published var userList: [Users] = []
 }// UserData
       
 // Modelのデータと同じ型にして配列で受け取れるように@Publishdで定義

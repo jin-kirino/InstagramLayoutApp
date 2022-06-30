@@ -11,7 +11,7 @@ import Foundation
 // Modelはデータを扱う責務、範囲
 // ３つの投稿をModelで管理
 
-struct UserModel {
+struct Model {
     let userName: String
     let userImageName: String
     let postImageName: String
