@@ -11,15 +11,7 @@ import SwiftUI
 struct ContentView: View {
     // @StateObjectをつけてObservableObjectプロトコルのついてるViewModelからの情報を受け取る
     // ObservableObjectプロトコルに準拠したUserDataクラスをViewで共有するため
-    @StateObject var userDataList = UserData()
-//    // いいねの数
-//    @State var numberOfLikes: Int = 0
-//    // 投稿者の名前
-//    @State var userName: String = ""
-//    // 投稿者のアイコン画像名
-//    @State var userImageName: String = ""
-//    // 投稿した画像名
-//    @State var postImageName: String = ""
+    @StateObject var userDataList = ViewModel()
 
     var body: some View {
         VStack {

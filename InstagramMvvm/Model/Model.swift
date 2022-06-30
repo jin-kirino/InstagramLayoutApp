@@ -18,7 +18,7 @@ struct Model {
 }
 
 var Users = [
-UserModel(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1"),
-UserModel(userName: "zuck", userImageName: "zuck_image", postImageName: "post_2"),
-UserModel(userName: "john", userImageName: "john_image", postImageName: "post_3")
+    Model(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1"),
+    Model(userName: "zuck", userImageName: "zuck_image", postImageName: "post_2"),
+    Model(userName: "john", userImageName: "john_image", postImageName: "post_3")
 ]
