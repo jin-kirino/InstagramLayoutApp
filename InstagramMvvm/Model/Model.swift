@@ -15,10 +15,13 @@ struct Model {
     let userName: String
     let userImageName: String
     let postImageName: String
-}
+}// Model
 
-var Users = [
-    Model(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1"),
-    Model(userName: "zuck", userImageName: "zuck_image", postImageName: "post_2"),
-    Model(userName: "john", userImageName: "john_image", postImageName: "post_3")
-]
+// Model型の空の配列
+var userModel: [Model] = []
+
+userModel.append(Model(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1"))
+userModel.append(Model(userName: "zuck", userImageName: "zuck_image", postImageName: "post_2"))
+userModel.append(Model(userName: "john", userImageName: "john_image", postImageName: "post_3"))
+
+
