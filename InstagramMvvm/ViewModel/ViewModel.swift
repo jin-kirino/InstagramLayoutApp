@@ -18,7 +18,6 @@ import SwiftUI
 
 // カスタムクラス内でデータの状態を管理する(ObservableObject)
 class ViewModel: ObservableObject {
-    
     // ObservableObjectプロトコル内のプロパティをContentViewのbodyに配信する
     @Published var userList: [Model] = []
 }// UserData

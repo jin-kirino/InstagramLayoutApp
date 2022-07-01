@@ -12,16 +12,15 @@ import Foundation
 // ３つの投稿をModelで管理
 
 struct Model {
-    let userName: String
-    let userImageName: String
-    let postImageName: String
+    struct UserModel: Identifiable {
+        let id = UUID()
+        let userName: String
+        let userImageName: String
+        let postImageName: String
+    }
+    let jennyModel = [UserModel(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1")]
+    let zuckModel = [UserModel(userName: "zuck", userImageName: "zuck_image", postImageName: "post_2")]
+    let johnModel = [UserModel(userName: "john", userImageName: "john_image", postImageName: "post_3")]
+    
+    
 }// Model
-
-// Model型の空の配列
-var userModel: [Model] = []
-
-userModel.append(Model(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1"))
-userModel.append(Model(userName: "zuck", userImageName: "zuck_image", postImageName: "post_2"))
-userModel.append(Model(userName: "john", userImageName: "john_image", postImageName: "post_3"))
-
-
