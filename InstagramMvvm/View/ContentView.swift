@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     // @StateObjectをつけてObservableObjectプロトコルのついてるViewModelからの情報を受け取る
     // ObservableObjectプロトコルに準拠したUserDataクラスをViewで共有するため
-    @StateObject var userDataList = ViewModel()
+    @ObservedObject var dataList = ViewModel()
 
     var body: some View {
         VStack {
@@ -28,7 +28,7 @@ struct ContentView: View {
                 Text(userName)
             }// HStack
             // 投稿した画像名
-            Image(postImageName)
+            Image(dataList.model.postImageName)
                 // リサイズを指定
                 .resizable()
                 .frame(width: 270.0, height: 270.0, alignment: .center)

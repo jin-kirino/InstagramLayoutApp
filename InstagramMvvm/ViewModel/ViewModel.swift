@@ -16,12 +16,18 @@ import SwiftUI
 
 // 3件分のデータを管理する
 
+let userModels: [Model] = [Model(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1"),
+                           Model(userName: "zuck", userImageName: "zuck_image", postImageName: "post_2"),
+                           Model(userName: "john", userImageName: "john_image", postImageName: "post_3")]
 // カスタムクラス内でデータの状態を管理する(ObservableObject)
 class ViewModel: ObservableObject {
     // ObservableObjectプロトコル内のプロパティをContentViewのbodyに配信する
-    @Published var userList: [Model] = []
+    @Published var model: [Model] = []
+    
+    init() {
+        self.model = userModels
+    }
 }// UserData
-      
 // Modelのデータと同じ型にして配列で受け取れるように@Publishdで定義
 
 // リストを作成してViewに返す

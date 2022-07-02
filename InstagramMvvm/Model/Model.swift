@@ -11,16 +11,12 @@ import Foundation
 // Modelはデータを扱う責務、範囲
 // ３つの投稿をModelで管理
 
-struct Model {
-    struct UserModel: Identifiable {
-        let id = UUID()
-        let userName: String
-        let userImageName: String
-        let postImageName: String
-    }
-    let jennyModel = [UserModel(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1")]
-    let zuckModel = [UserModel(userName: "zuck", userImageName: "zuck_image", postImageName: "post_2")]
-    let johnModel = [UserModel(userName: "john", userImageName: "john_image", postImageName: "post_3")]
-    
-    
+struct Model: Identifiable {
+
+    var id = UUID()
+    var userName: String
+    var userImageName: String
+    var postImageName: String
 }// Model
+
+
