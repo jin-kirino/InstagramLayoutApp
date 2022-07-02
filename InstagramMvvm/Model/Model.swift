@@ -12,11 +12,9 @@ import Foundation
 // ３つの投稿をModelで管理
 
 struct Model: Identifiable {
-
     var id = UUID()
     var userName: String
     var userImageName: String
     var postImageName: String
 }// Model
-
-
+let jenny: Model = Model(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1")

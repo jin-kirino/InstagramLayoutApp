@@ -17,7 +17,7 @@ struct ContentView: View {
         VStack {
             HStack {
                 // 投稿者のアイコン画像名
-                Image(userImageName)
+                Image(dataList.model.userImageName)
                     // リサイズを指定
                     .resizable()
                     .frame(width: 70.0, height: 70.0, alignment: .topLeading)
@@ -25,7 +25,7 @@ struct ContentView: View {
                     .padding(.bottom, 20.0)
                     .padding(.top, 10.0)
                 // 投稿者の名前
-                Text(userName)
+                Text(dataList.model.userName)
             }// HStack
             // 投稿した画像名
             Image(dataList.model.postImageName)
