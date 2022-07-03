@@ -23,6 +23,7 @@ class ViewModel: ObservableObject {
     @Published var model: [Model]
     
     init() {
+        // ３人分のデータが配列に格納されている
         self.model = userList
     }
 }// ViewModel

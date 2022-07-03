@@ -14,13 +14,15 @@ struct TimelineView: View {
     @ObservedObject var dataList = ViewModel()
     
     var body: some View {
+        // dataList.model == userList: [Model] = [jenny, zuck, john]
+        // これをuserに一つずつ入れていく
         List(dataList.model) { user in
-            TimelineRowView()
+            TimelineRowView(userName: user.userName, userImageName: user.userImageName, postImageName: user.postImageName)
         }// List
     }// body
 }// ContentView
 
-struct ContentView_Previews: PreviewProvider {
+struct TimelineView_Previews: PreviewProvider {
     static var previews: some View {
         TimelineView()
     }

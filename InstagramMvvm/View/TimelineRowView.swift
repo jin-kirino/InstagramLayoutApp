@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct TimelineRowView: View {
+    // 投稿者の名前
+    let userName: String
+    // 投稿者のアイコン画像名
+    let userImageName: String
+    // 投稿した画像名
+    let postImageName: String
+    
     var body: some View {
         VStack {
             HStack {
@@ -70,6 +77,6 @@ struct TimelineRowView: View {
 
 struct TimelineRowView_Previews: PreviewProvider {
     static var previews: some View {
-        TimelineRowView()
+        TimelineRowView(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1")
     }
 }
