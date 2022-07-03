@@ -12,7 +12,7 @@ struct TimelineRowView: View {
         VStack {
             HStack {
                 // 投稿者のアイコン画像名
-                Image(user.userImageName)
+                Image(userImageName)
                 // リサイズを指定
                     .resizable()
                     .frame(width: 70.0, height: 70.0, alignment: .topLeading)
@@ -20,11 +20,11 @@ struct TimelineRowView: View {
                     .padding(.bottom, 20.0)
                     .padding(.top, 10.0)
                 // 投稿者の名前
-                Text(user.userName)
+                Text(userName)
                     .frame(maxWidth: .infinity, alignment: .topLeading)
             }// HStack
             // 投稿した画像名
-            Image(user.postImageName)
+            Image(postImageName)
             // リサイズを指定
                 .resizable()
                 .frame(width: 270.0, height: 270.0, alignment: .center)

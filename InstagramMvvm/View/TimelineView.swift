@@ -8,7 +8,7 @@
 import SwiftUI
 
 // ◉Observer(データ受け取り、反映)
-struct ContentView: View {
+struct TimelineView: View {
     // @StateObjectをつけてObservableObjectプロトコルのついてるViewModelからの情報を受け取る
     // ObservableObjectプロトコルに準拠したUserDataクラスをViewで共有するため
     @ObservedObject var dataList = ViewModel()
@@ -22,7 +22,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TimelineView()
     }
 }
 
