@@ -20,3 +20,5 @@ struct Model: Identifiable {
 let jenny: Model = Model(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1")
 let zuck: Model = Model(userName: "zuck", userImageName: "zuck_image",postImageName: "post_2")
 let john: Model = Model(userName: "john", userImageName: "john_image", postImageName: "post_3")
+// ３人分を配列に格納
+let userList: [Model] = [jenny, zuck, john]

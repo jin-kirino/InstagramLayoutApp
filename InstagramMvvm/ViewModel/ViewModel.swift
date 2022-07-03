@@ -19,10 +19,11 @@ import SwiftUI
 // カスタムクラス内でデータの状態を管理する(ObservableObject)
 class ViewModel: ObservableObject {
     // ObservableObjectプロトコル内のプロパティをContentViewのbodyに配信する
-    @Published var model: Model
+    // 配列で定義
+    @Published var model: [Model]
     
     init() {
-        self.model = jenny
+        self.model = userList
     }
 }// ViewModel
 // Modelのデータと同じ型にして配列で受け取れるように@Publishdで定義
