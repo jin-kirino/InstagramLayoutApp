@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF4CCBD128715F460061AAF9 /* TimelineRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4CCBD028715F460061AAF9 /* TimelineRowView.swift */; };
 		FFB9A33428668CA100853232 /* InstagramMvvmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9A33328668CA100853232 /* InstagramMvvmApp.swift */; };
 		FFB9A33628668CA100853232 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9A33528668CA100853232 /* ContentView.swift */; };
 		FFB9A33828668CA300853232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB9A33728668CA300853232 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF4CCBD028715F460061AAF9 /* TimelineRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineRowView.swift; sourceTree = "<group>"; };
 		FFB9A33028668CA100853232 /* InstagramMvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramMvvm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB9A33328668CA100853232 /* InstagramMvvmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramMvvmApp.swift; sourceTree = "<group>"; };
 		FFB9A33528668CA100853232 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				FFB9A33528668CA100853232 /* ContentView.swift */,
+				FF4CCBD028715F460061AAF9 /* TimelineRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFB9A3502867E53000853232 /* Model.swift in Sources */,
+				FF4CCBD128715F460061AAF9 /* TimelineRowView.swift in Sources */,
 				FFB9A34E2867E4B700853232 /* ViewModel.swift in Sources */,
 				FFB9A33628668CA100853232 /* ContentView.swift in Sources */,
 				FFB9A33428668CA100853232 /* InstagramMvvmApp.swift in Sources */,

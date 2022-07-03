@@ -14,7 +14,7 @@ struct ContentView: View {
     @ObservedObject var dataList = ViewModel()
     
     var body: some View {
-        List(dataList) { user in
+        List(dataList.model) { user in
             VStack {
                 HStack {
                     // 投稿者のアイコン画像名
@@ -27,6 +27,7 @@ struct ContentView: View {
                         .padding(.top, 10.0)
                     // 投稿者の名前
                     Text(user.userName)
+                        .frame(maxWidth: .infinity, alignment: .topLeading)
                 }// HStack
                 // 投稿した画像名
                 Image(user.postImageName)
