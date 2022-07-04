@@ -8,7 +8,6 @@
 import Foundation
 
 struct PostData {
-    
     func fetch() -> [Post] {
         // ３人分のデータを配列にして返す
         let postJenny = jenny
@@ -17,4 +16,6 @@ struct PostData {
         return [postJenny, postzuck, postJohn]
     }
 }// PostData
+
+let postData = PostData()
 
