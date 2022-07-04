@@ -7,8 +7,14 @@
 
 import Foundation
 
-let jenny: Post = Model(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1")
-let zuck: Post = Model(userName: "zuck", userImageName: "zuck_image",postImageName: "post_2")
-let john: Post = Model(userName: "john", userImageName: "john_image", postImageName: "post_3")
-// ３人分を配列に格納
-let userList: [Post] = [jenny, zuck, john]
+struct PostData {
+    
+    func fetch() -> [Post] {
+        // ３人分のデータを配列にして返す
+        let postJenny = jenny
+        let postzuck = zuck
+        let postJohn = john
+        return [postJenny, postzuck, postJohn]
+    }
+}// PostData
+
