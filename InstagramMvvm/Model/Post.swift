@@ -11,14 +11,10 @@ import Foundation
 // Modelはデータを扱う責務、範囲
 // ３つの投稿をModelで管理
 
-struct Model: Identifiable {
+struct Post: Identifiable {
     var id = UUID()
     var userName: String
     var userImageName: String
     var postImageName: String
 }// Model
-let jenny: Model = Model(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1")
-let zuck: Model = Model(userName: "zuck", userImageName: "zuck_image",postImageName: "post_2")
-let john: Model = Model(userName: "john", userImageName: "john_image", postImageName: "post_3")
-// ３人分を配列に格納
-let userList: [Model] = [jenny, zuck, john]
+

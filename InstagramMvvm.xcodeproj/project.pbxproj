@@ -8,23 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		FF4CCBD128715F460061AAF9 /* TimelineRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4CCBD028715F460061AAF9 /* TimelineRowView.swift */; };
+		FF4CCBF12872975C0061AAF9 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4CCBF02872975C0061AAF9 /* PostData.swift */; };
 		FFB9A33428668CA100853232 /* InstagramMvvmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9A33328668CA100853232 /* InstagramMvvmApp.swift */; };
 		FFB9A33628668CA100853232 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9A33528668CA100853232 /* TimelineView.swift */; };
 		FFB9A33828668CA300853232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB9A33728668CA300853232 /* Assets.xcassets */; };
 		FFB9A33B28668CA300853232 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB9A33A28668CA300853232 /* Preview Assets.xcassets */; };
 		FFB9A34E2867E4B700853232 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9A34D2867E4B700853232 /* ViewModel.swift */; };
-		FFB9A3502867E53000853232 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9A34F2867E53000853232 /* Model.swift */; };
+		FFB9A3502867E53000853232 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9A34F2867E53000853232 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF4CCBD028715F460061AAF9 /* TimelineRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineRowView.swift; sourceTree = "<group>"; };
+		FF4CCBF02872975C0061AAF9 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		FFB9A33028668CA100853232 /* InstagramMvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramMvvm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB9A33328668CA100853232 /* InstagramMvvmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramMvvmApp.swift; sourceTree = "<group>"; };
 		FFB9A33528668CA100853232 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		FFB9A33728668CA300853232 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFB9A33A28668CA300853232 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFB9A34D2867E4B700853232 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		FFB9A34F2867E53000853232 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FFB9A34F2867E53000853232 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 		FFB9A34328668CDF00853232 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FFB9A34F2867E53000853232 /* Model.swift */,
+				FFB9A34F2867E53000853232 /* Post.swift */,
+				FF4CCBF02872975C0061AAF9 /* PostData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,7 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB9A3502867E53000853232 /* Model.swift in Sources */,
+				FFB9A3502867E53000853232 /* Post.swift in Sources */,
+				FF4CCBF12872975C0061AAF9 /* PostData.swift in Sources */,
 				FF4CCBD128715F460061AAF9 /* TimelineRowView.swift in Sources */,
 				FFB9A34E2867E4B700853232 /* ViewModel.swift in Sources */,
 				FFB9A33628668CA100853232 /* TimelineView.swift in Sources */,
