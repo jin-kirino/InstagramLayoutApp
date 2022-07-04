@@ -16,7 +16,7 @@ struct Post: Identifiable {
     var userName: String
     var userImageName: String
     var postImageName: String
-}// Model
+}// Post
 
 let jenny: Post = Post(userName: "jenny", userImageName: "jenny_image", postImageName: "post_1")
 let zuck: Post = Post(userName: "zuck", userImageName: "zuck_image",postImageName: "post_2")
