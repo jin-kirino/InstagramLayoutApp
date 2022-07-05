@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+gi
 
 struct PostData {
     func fetch() -> [Post] {
