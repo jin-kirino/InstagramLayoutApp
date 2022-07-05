@@ -7,7 +7,7 @@
 
 import Foundation
 
-// 配列
+// 投稿データの構造体
 // Modelはデータを扱う責務、範囲
 // ３つの投稿をModelで管理
 
@@ -17,4 +17,3 @@ struct Post: Identifiable {
     var userImageName: String
     var postImageName: String
 }// Post
-
