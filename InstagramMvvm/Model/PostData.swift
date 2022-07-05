@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+g
 struct PostData {
     func fetch() -> [Post] {
         // ３人分のデータを配列にして返す
