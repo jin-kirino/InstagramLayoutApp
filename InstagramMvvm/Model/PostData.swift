@@ -7,6 +7,7 @@
 
 import Foundation
 
+// データ本体を管理
 struct PostData {
     func fetch() -> [Post] {
         // ３人分のデータを配列にして返す
