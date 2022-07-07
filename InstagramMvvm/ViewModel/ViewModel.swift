@@ -20,10 +20,10 @@ import SwiftUI
 class TimelineViewModel: ObservableObject {
     // ObservableObjectプロトコル内のプロパティをContentViewのbodyに配信する
     // 配列で定義
-    @Published var postData: [Post]
-    
+    @Published var postData: [Post] = aaa
     init() {
         self.postData = postData
-    }
+    }// init
 }// TimelineViewModel
 // Modelのデータと同じ型にして配列で受け取れるように@Publishdで定義
+let aaa = postData.fetch()
