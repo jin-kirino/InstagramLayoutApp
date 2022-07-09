@@ -13,7 +13,6 @@ import SwiftUI
 // ObservableObject
 // @Published
 // ◉Publisher(データ発信)◉
-
 // 3件分のデータを管理する
 
 // カスタムクラス内でデータの状態を管理する(ObservableObject)
@@ -21,14 +20,14 @@ class TimelineViewModel: ObservableObject {
     
     // ObservableObjectプロトコル内のプロパティをContentViewのbodyに配信する
     // Modelのデータと同じ型にして配列で受け取れるように@Publishdで定義
-    // 配列で定義:[Post]
+    // PostDataの３つのデータを受け取る配列:[Post]
     @Published var postData: [Post] = []
-    init() {
-        // インスタンス化
+    // PostDataのfetch()を実行する関数
+    func fetch() -> [Post] {
+        // 構造体PostDataをインスタンス化
         let postData = PostData()
-        self.postData = postData.fetch()
-    }// init
+        // 構造体PostData内の３人分のデータの配列がpostDataに入る↑self
+        return postData.fetch()
+    }// fetch
 }// TimelineViewModel
 
-// PostDataの関数内の配列を格納
-//let aaa = postData.fetch()
