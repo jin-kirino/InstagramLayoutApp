@@ -9,15 +9,15 @@ import SwiftUI
 
 // ◉Observer(データ受け取り、反映)
 struct TimelineView: View {
-    // @StateObjectをつけてObservableObjectプロトコルのついてるViewModelからの情報を受け取る
     // ObservableObjectプロトコルに準拠したUserDataクラスをViewで共有するため
+    // TimelineViewModelのインスタンス化
     @ObservedObject var timelineViewModel = TimelineViewModel()
-    
+
     var body: some View {
-        // dataList.model == userList: [Model] = [jenny, zuck, john]
+        
         // これをuserに一つずつ入れていく
-        List(timelineViewModel.postData) { user in
-            TimelineRowView(userName: user.userName, userImageName: user.userImageName, postImageName: user.postImageName)
+        List(timelineViewModel.fetch()) { userData in
+            TimelineRowView(userName: userData.userName, userImageName: userData.userImageName, postImageName: userData.postImageName)
         }// List
     }// body
 }// ContentView
