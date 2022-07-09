@@ -13,7 +13,7 @@
 		FFB9A33628668CA100853232 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9A33528668CA100853232 /* TimelineView.swift */; };
 		FFB9A33828668CA300853232 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB9A33728668CA300853232 /* Assets.xcassets */; };
 		FFB9A33B28668CA300853232 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB9A33A28668CA300853232 /* Preview Assets.xcassets */; };
-		FFB9A34E2867E4B700853232 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9A34D2867E4B700853232 /* ViewModel.swift */; };
+		FFB9A34E2867E4B700853232 /* TimelineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9A34D2867E4B700853232 /* TimelineViewModel.swift */; };
 		FFB9A3502867E53000853232 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9A34F2867E53000853232 /* Post.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,7 @@
 		FFB9A33528668CA100853232 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		FFB9A33728668CA300853232 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFB9A33A28668CA300853232 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FFB9A34D2867E4B700853232 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FFB9A34D2867E4B700853232 /* TimelineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewModel.swift; sourceTree = "<group>"; };
 		FFB9A34F2867E53000853232 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +89,7 @@
 		FFB9A34228668CD400853232 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FFB9A34D2867E4B700853232 /* ViewModel.swift */,
+				FFB9A34D2867E4B700853232 /* TimelineViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -176,7 +176,7 @@
 				FFB9A3502867E53000853232 /* Post.swift in Sources */,
 				FF4CCBF12872975C0061AAF9 /* PostData.swift in Sources */,
 				FF4CCBD128715F460061AAF9 /* TimelineRowView.swift in Sources */,
-				FFB9A34E2867E4B700853232 /* ViewModel.swift in Sources */,
+				FFB9A34E2867E4B700853232 /* TimelineViewModel.swift in Sources */,
 				FFB9A33628668CA100853232 /* TimelineView.swift in Sources */,
 				FFB9A33428668CA100853232 /* InstagramMvvmApp.swift in Sources */,
 			);

@@ -18,14 +18,17 @@ import SwiftUI
 
 // カスタムクラス内でデータの状態を管理する(ObservableObject)
 class TimelineViewModel: ObservableObject {
+    
     // ObservableObjectプロトコル内のプロパティをContentViewのbodyに配信する
     // Modelのデータと同じ型にして配列で受け取れるように@Publishdで定義
     // 配列で定義:[Post]
-    @Published var postData: [Post] = aaa
+    @Published var postData: [Post] = []
     init() {
-        self.postData = postData
+        // インスタンス化
+        let postData = PostData()
+        self.postData = postData.fetch()
     }// init
 }// TimelineViewModel
 
 // PostDataの関数内の配列を格納
-let aaa = postData.fetch()
+//let aaa = postData.fetch()

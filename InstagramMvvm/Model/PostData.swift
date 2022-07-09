@@ -20,5 +20,4 @@ struct PostData {
         return [postJenny, postZuck, postJohn]
     }// fetch
 }// PostData
-// インスタンス化
-let postData = PostData()
+
