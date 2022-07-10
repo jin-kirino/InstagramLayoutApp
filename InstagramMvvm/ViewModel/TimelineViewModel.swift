@@ -23,11 +23,11 @@ class TimelineViewModel: ObservableObject {
     // PostDataの３つのデータを受け取る配列:[Post]
     @Published var postData: [Post] = []
     // PostDataのfetch()を実行する関数
-    func fetch() -> [Post] {
+    func fetch() {
         // 構造体PostDataをインスタンス化
         let postData = PostData()
         // 構造体PostData内の３人分のデータの配列がpostDataに入る↑self
-        return postData.fetch()
+        self.postData = postData.fetch()
     }// fetch
 }// TimelineViewModel
 
