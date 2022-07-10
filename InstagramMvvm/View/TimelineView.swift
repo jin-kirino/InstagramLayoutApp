@@ -16,8 +16,8 @@ struct TimelineView: View {
     var body: some View {
         
         // これをuserに一つずつ入れていく
-        List(timelineViewModel.postData) { userData in
-            TimelineRowView(userName: userData.userName, userImageName: userData.userImageName, postImageName: userData.postImageName)
+        List(timelineViewModel.postData) { postData in
+            TimelineRowView(userName: postData.userName, userImageName: postData.userImageName, postImageName: postData.postImageName)
         }// List
         .onAppear() {
             timelineViewModel.fetch()
